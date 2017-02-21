@@ -5,9 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: Python-{{ version }}.tgz
-  url: https://www.python.org/ftp/python/{{ version }}/Python-{{ version }}.tgz
-  sha256: aa472515800d25a3739833f76ca3735d9f4b2fe77c3cb21f69275e0cce30cb2b
+  git_url: /Users/bussonniermatthias/dev/cpython
+  git_rev: dbcffb02112820167b11efef4afa7c00cceb6c58
   patches:
     - omit-local-site-packages.patch  # [osx]
     - osx64-dist.patch                # [osx and x86_64]
