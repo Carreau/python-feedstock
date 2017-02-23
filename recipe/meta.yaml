@@ -1,4 +1,4 @@
-{% set version = "3.6.0" %}
+{% set version = "3.6.99" %}
 
 package:
   name: python
@@ -6,7 +6,7 @@ package:
 
 source:
   git_url: /Users/bussonniermatthias/dev/cpython
-  git_rev: dbcffb02112820167b11efef4afa7c00cceb6c58
+  git_rev: cb41b2766de646435743b6af7dd152751b54e73f
   patches:
     - omit-local-site-packages.patch  # [osx]
     - osx64-dist.patch                # [osx and x86_64]
